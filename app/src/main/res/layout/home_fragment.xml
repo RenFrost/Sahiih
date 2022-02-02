@@ -7,61 +7,48 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.HomeFragment">
 
-    <com.synnapps.carouselview.CarouselView
-        android:id="@+id/carouselView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:fillColor="#FFFFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:pageColor="#00000000"
-        app:radius="6dp"
-        app:slideInterval="3000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" />
 
     <ImageButton
         android:id="@+id/foods_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="304dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/drinks_button"
-        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
         android:id="@+id/drinks_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="304dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/medicines_button"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
         android:id="@+id/medicines_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="304dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/cosmetics_button"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
         android:id="@+id/cosmetics_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <ImageButton
@@ -102,18 +89,17 @@
         android:layout_width="83dp"
         android:layout_height="78dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cosmetics_button"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <androidx.recyclerview.widget.RecyclerView
-        app:flow_horizontalStyle="packed"
         android:layout_width="413dp"
         android:layout_height="143dp"
-        android:layout_marginTop="580dp"
+        android:layout_marginTop="528dp"
+        app:flow_horizontalStyle="packed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

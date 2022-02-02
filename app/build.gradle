@@ -55,7 +55,8 @@ dependencies {
     implementation 'com.romandanylyk:pageindicatorview:1.0.3'
     implementation "org.jetbrains.anko:anko-commons:0.10.8"
     implementation 'com.budiyev.android:code-scanner:2.1.0'
-    implementation 'com.synnapps:carouselview:0.1.4'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     testImplementation 'junit:junit:4.+'
 
     //Retrofit Implementation

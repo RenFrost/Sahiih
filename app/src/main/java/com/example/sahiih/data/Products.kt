@@ -21,5 +21,4 @@ data class Products (
     val potentialAllergy: String,
     val ingredientInformation: String,
     val distributionPermissionNumber: Int,
-    val carouselImgUrl:String
 )
