@@ -7,7 +7,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 const val BASE_ENDPOINT_URL = ""
 
-class PictureRepository {
+class ProductsRepository {
 
     private val retrofit: Retrofit by lazy {
         val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
@@ -22,11 +22,11 @@ class PictureRepository {
         retrofit.create(ProductApi::class.java)
     }
 
-//    suspend fun getProducts(page: Int): List<Products> {
-//        val response = productApi.getProducts(page)
-//        return if (response.isSuccessful)
-//            response.body() ?: emptyList()
-//      else
-//            emptyList()
-//    }
+    fun getProducts(page: Int): List<ProductsData> {
+        val response = productApi.getProducts(page)
+        return if (response.isSuccessful)
+            response.body() ?: emptyList()
+     else
+           emptyList()
+   }
 }

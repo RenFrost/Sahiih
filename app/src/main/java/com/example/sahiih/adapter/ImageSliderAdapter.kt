@@ -2,11 +2,9 @@ package com.example.sahiih.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.sahiih.data.ImageData
-import com.example.sahiih.data.Products
 import com.example.sahiih.databinding.ItemSlideBinding
 
 class ImageSliderAdapter(private val items: List<ImageData>) : RecyclerView.Adapter<ImageSliderAdapter.ImageViewHolder>() {

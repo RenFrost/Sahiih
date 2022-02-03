@@ -4,7 +4,7 @@ import android.nfc.tech.NfcBarcode
 import java.net.URL
 import java.util.*
 
-data class Products (
+data class ProductsData (
     val name: String,
     val productsImgUrl: String,
     val productsCategory: String,

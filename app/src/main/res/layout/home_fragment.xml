@@ -7,13 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.HomeFragment">
 
-
     <ImageButton
         android:id="@+id/foods_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/drinks_button"
         app:layout_constraintHorizontal_bias="0.411"
@@ -25,7 +24,7 @@
         android:id="@+id/drinks_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/medicines_button"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +34,7 @@
         android:id="@+id/medicines_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toStartOf="@+id/cosmetics_button"
         app:layout_constraintTop_toTopOf="parent"
@@ -45,7 +44,7 @@
         android:id="@+id/cosmetics_button"
         android:layout_width="83dp"
         android:layout_height="78dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -104,5 +103,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

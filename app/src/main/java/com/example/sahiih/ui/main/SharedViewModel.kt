@@ -1,24 +1,26 @@
 package com.example.sahiih.ui.main
 
-import android.util.Log
-import androidx.lifecycle.LiveData
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.sahiih.data.ProductsData
+import com.example.sahiih.data.ProductsRepository
 
 private const val  LOG_TAG = "SharedViewModel"
 
-class SharedViewModel : ViewModel() {
+class SharedViewModel(app: Application) : AndroidViewModel(app) {
 
-    private val _info : MutableLiveData<Int> = MutableLiveData()
-    val info: LiveData<Int> = _info
+    val products: MutableLiveData<List<ProductsData>> = MutableLiveData()
 
-    init {
-        Log.i("SharedViewModel", "created")
-        _info.value = 0
-    }
+    var productsRepository: ProductsRepository = ProductsRepository()
 
-    fun loadData() {
-        _info.value = _info.value!! + 1
-        Log.i(LOG_TAG, "current value: ${_info.value}")
-    }
+//    init {
+//        val data = productsRepository.getProducts(app)
+//        data?.let {
+//            products.value = it
+//        }
+//    }
+
+
 }
