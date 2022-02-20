@@ -2,27 +2,32 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
-
+    app:startDestination="@+id/action_home">
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/action_home"
         android:name="com.example.sahiih.ui.main.HomeFragment"
-        android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
-            android:id="@+id/action_homeFragment_to_foodFragment"
-            app:destination="@id/foodFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true"/>
+            android:id="@+id/action_homeFragment_to_productFragment"
+            app:destination="@id/action_product" />
     </fragment>
     <fragment
-        android:id="@+id/foodFragment"
-        android:name="com.example.sahiih.fragments.FoodFragment"
-        android:label="food_fragment"
-        tools:layout="@layout/food_fragment" >
+        android:id="@+id/action_product"
+        android:name="com.example.sahiih.fragments.ProductFragment"
+        tools:layout="@layout/product_fragment" >
         <action
-            android:id="@+id/action_foodFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_productFragment_to_homeFragment"
+            app:destination="@id/action_home" />
+        <action
+            android:id="@+id/action_productFragment_to_detailFragment"
+            app:destination="@id/action_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_detail"
+        android:name="com.example.sahiih.fragments.DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_productFragment"
+            app:destination="@id/action_product" />
     </fragment>
 </navigation>

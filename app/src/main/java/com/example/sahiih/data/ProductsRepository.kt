@@ -5,7 +5,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-const val BASE_ENDPOINT_URL = ""
+const val BASE_ENDPOINT_URL = "https://2873199.youcanlearnit.net/"
 
 class ProductsRepository {
 
@@ -22,8 +22,8 @@ class ProductsRepository {
         retrofit.create(ProductApi::class.java)
     }
 
-    fun getProducts(page: Int): List<ProductsData> {
-        val response = productApi.getProducts(page)
+   suspend fun getProducts(): List<ProductsData> {
+        val response = productApi.getProducts()
         return if (response.isSuccessful)
             response.body() ?: emptyList()
      else
